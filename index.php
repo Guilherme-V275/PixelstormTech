@@ -79,7 +79,7 @@
       <li><a href="sobre_o_site.html2.html">Sobre</a></li>
       <li><a href="https://localhost/trabalho_flavio/index.php">Produtos</a></li>
       <li><a href="pagina_de_novidades.html">Novidades</a></li>
-      <li><a href="pagina_de_contato.html">Contatos</a></li>
+      <li><a href="pagina_de_contato - Copia.html">Contatos</a></li>
     </ul>
   </nav>
 

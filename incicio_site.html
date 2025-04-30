@@ -8,7 +8,7 @@
 <style>
     body {
         margin: 0;
-       font-family: 'Manrope', sans-serif;
+        font-family: 'Manrope', sans-serif;
         padding: 0;
     }
 
@@ -41,34 +41,37 @@
         background-color: #555;
         border-radius: 5px;
     }
-     .content {
-                display: flex;
-                flex-direction: column;
-                /* Organiza verticalmente */
-                align-items: center;
-                /* Centraliza horizontalmente */
-                justify-content: center;
-                /* Centraliza verticalmente */
-                height: 100vh;
-                /* Ocupa a altura da tela */
-                text-align: center;
-                margin-top: 60px;
-                /* Compensa o espaço do menu */
-                background-color: white;
-            }
 
-            .content img {
-                max-width: 200px;
-                max-height: 300px;
-                /* Tamanho máximo da imagem */
-                height: auto;
-                /* Mantém as proporções */
-                margin-bottom: 20px;
-                /* Espaço entre imagem e texto */
-            }
-            h1, p {
-                 font-family: 'Manrope', sans-serif;
-            }
+    .content {
+        display: flex;
+        flex-direction: column;
+        /* Organiza verticalmente */
+        align-items: center;
+        /* Centraliza horizontalmente */
+        justify-content: center;
+        /* Centraliza verticalmente */
+        height: 100vh;
+        /* Ocupa a altura da tela */
+        text-align: center;
+        margin-top: 60px;
+        /* Compensa o espaço do menu */
+        background-color: white;
+    }
+
+    .content img {
+        max-width: 200px;
+        max-height: 300px;
+        /* Tamanho máximo da imagem */
+        height: auto;
+        /* Mantém as proporções */
+        margin-bottom: 20px;
+        /* Espaço entre imagem e texto */
+    }
+
+    h1,
+    p {
+        font-family: 'Manrope', sans-serif;
+    }
 </style>
 </head>
 
@@ -79,17 +82,17 @@
             <li><a href="informações_detalhadas.html">Sobre</a></li>
             <li><a href="https://localhost/trabalho_flavio/index.php">Produtos</a></li>
             <li><a href="pagina_de_novidades.html">Novidades</a></li>
-            <li><a href="pagina_de_contato.html">Contatos</a></li>
+            <li><a href="pagina_de_contato - Copia.html">Contatos</a></li>
         </ul>
         <div class="content">
-           
-            <img src="logo_pixel.png" alt="Logo PixelStorm">
+
+            <img src="pixelstorm.jpg" alt="Logo PixelStorm">
             <h1>Bem-vindo à PixelStorm Games & Tech</h1>
             <p>Somos uma empresa de desenvolvimento de games e produtos inovadores.</p>
             <p>Conheça nosso mais novo lançamento: o PeraPhone, o smartphone que revoluciona o jeito de se conectar!</p>
         </div>
     </nav>
-    
+
     <!DOCTYPE html>
     <html lang="pt-br">
 
@@ -132,9 +135,10 @@
                 padding: 5px 10px;
                 transition: background-color 0.3s;
             }
+
             nav ul li a .hover {
                 background-color: #555;
-                border-radius  : 5px;
+                border-radius: 5px;
             }
 
             /* Centraliza imagem e texto */
@@ -161,13 +165,13 @@
                 margin-bottom: 20px;
                 /* Espaço entre imagem e texto */
             }
+
             @keyframes cair {
-    to {
-      transform: translateY(100vh);
-      opacity: 0;
-    }
-  }
-  
+                to {
+                    transform: translateY(100vh);
+                    opacity: 0;
+                }
+            }
         </style>
     </head>
 
@@ -190,19 +194,19 @@
         </div>
         <button onclick="criarPera()">🍐 Soltar uma pera</button>
 
-       <script>
-  function criarPera() {
-    const pera = document.createElement("div");
-    pera.textContent = "🍐";
-    pera.style.position = "fixed";
-    pera.style.left = Math.random() * 100 + "vw";
-    pera.style.top = "-40px";
-    pera.style.fontSize = Math.random() * 30 + 20 + "px";
-    pera.style.animation = "cair 5s linear forwards";
-    document.body.appendChild(pera);
-    setTimeout(() => pera.remove(), 5000);
-  }
-</script>
+        <script>
+            function criarPera() {
+                const pera = document.createElement("div");
+                pera.textContent = "🍐";
+                pera.style.position = "fixed";
+                pera.style.left = Math.random() * 100 + "vw";
+                pera.style.top = "-40px";
+                pera.style.fontSize = Math.random() * 30 + 20 + "px";
+                pera.style.animation = "cair 5s linear forwards";
+                document.body.appendChild(pera);
+                setTimeout(() => pera.remove(), 5000);
+            }
+        </script>
 
     </body>
 
